@@ -1,8 +1,10 @@
 // Arrune Nimalan
 // This program will calculate the date Easter falls on given a year after 2003
+import java.util.Scanner;
 public class Easter {
     public static void main(String[] args) {
-        int y = 2003;
+        Scanner scanner = new Scanner(System.in);
+        int y = scanner.nextInt();
         int a = y%19;
         int b = y/100;
         int c = y%100;
@@ -32,5 +34,6 @@ public class Easter {
         System.out.println("m = " +m);
         System.out.println("n = " +n);
         System.out.println("p = " +p);
+        System.out.println("Easter in "+ y +" falls on "+ n+ "/"+(p+1));
     }
 }
